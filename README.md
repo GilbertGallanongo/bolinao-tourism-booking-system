@@ -53,10 +53,12 @@ cp .env.example .env
 php artisan key:generate
 
 # 6. Set up database in .env
-DB_CONNECTION=mysql
-DB_DATABASE=bolinao_tourism
-DB_USERNAME=root
-DB_PASSWORD=
+DB_CONNECTION=sqlite
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=laravel
+# DB_USERNAME=root
+# DB_PASSWORD=
 
 # 7. Run migrations and seed
 php artisan migrate --seed
